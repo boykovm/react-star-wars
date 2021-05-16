@@ -3,11 +3,24 @@ $root-settings: (
         'color-white': #fff,
         'color-black': #000,
         'color-yellow': #ffff00,
+        'color-blue': #6a83fb,
+        'color-violet': #ae72c2,
 
         'border-radius-small': 3px,
 
         'spacing-medium': 20px,
+        'spacing-large': 30px,
 
+        'font-bold': 600,
+        'transition': .4s,
         'font-family-main': sans-serif,
         'font-size-header': 26px,
+
+        'theme-default-header': #cccc46,
+
+);
+
+$text-shadow: (
+        'text-shadow-yellow': 0 0 2px map-get($root-settings, color-yellow),
+        'text-shadow-blue': 0 0 40px map-get($root-settings, color-blue),
 );

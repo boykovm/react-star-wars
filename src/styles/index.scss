@@ -6,4 +6,12 @@ body {
   padding: 0;
   background-color: map-get($root-settings, color-dark-grey);
   font-family: map-get($root-settings, font-family-main);
+
+  .header__text {
+    line-height: 1.7;
+    font-size: map-get($root-settings, font-size-header);
+    text-shadow: 0 0 2px map-get($root-settings, color-black);
+    color: map-get($root-settings, theme-default-header);
+    transition: color map-get($root-settings, transition);
+  }
 }
