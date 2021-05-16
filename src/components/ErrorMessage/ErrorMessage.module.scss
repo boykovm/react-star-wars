@@ -1,0 +1,16 @@
+@import "../../styles/variables";
+
+.text {
+  width: 600px;
+  margin: auto;
+  margin-top: 100px;
+  line-height: 1.7;
+  color: map-get($root-settings, color-yellow);
+  font-size: map-get($root-settings, font-size-header);
+  text-shadow: 0 0 2px map-get($root-settings, color-white);
+
+  -webkit-text-stroke-color: map-get($root-settings, color-yellow);
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-fill-color: transparent;
+
+}

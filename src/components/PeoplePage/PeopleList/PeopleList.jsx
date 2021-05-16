@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 import styles from './PeopleList.module.scss'
 
 export const PeopleList = ({people}) => {
@@ -13,4 +15,8 @@ export const PeopleList = ({people}) => {
             })}
         </ul>
     )
+}
+
+PeopleList.propTypes = {
+    people: PropTypes.array
 }

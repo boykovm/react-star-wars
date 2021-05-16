@@ -1,9 +1,8 @@
-import styles from './App.module.scss';
-// import {getApiResource} from '../../utils/network'
+import PeoplePage from "../PeoplePage/PeoplePage";
 import {BrowserRouter as  Router, Route, Switch} from 'react-router-dom'
-import {PeoplePage} from "../PeoplePage/PeoplePage";
 
-// getApiResource()
+// eslint-disable-next-line
+import styles from './App.module.scss';
 
 export const App = () => {
   return (
