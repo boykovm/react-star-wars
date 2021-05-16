@@ -3,6 +3,7 @@ import styles from './PeoplePage.modules.scss'
 import {getApiResource} from '../../utils/network'
 import {API_PEOPLE} from '../../constants/api'
 import {getPeopleId, getPeopleImage} from "../../services/getPeopleData";
+import {PeopleList} from "../../components/PeoplePage/PeopleList/PeopleList";
 
 export const PeoplePage = () => {
     const [people, setPeople] = useState(null);
@@ -32,16 +33,7 @@ export const PeoplePage = () => {
 
     return (
         <>
-            {people ? (
-                <ul>
-                    {people.map(({name, id, img}) => {
-                        return <li key={id}>
-                            <img src={img} alt={name} />
-                            <p>{name}</p>
-                        </li>
-                    })}
-                </ul>
-            ) : <h2>False</h2>
+            {people ? <PeopleList people={people} /> : <h2>False</h2>
             }
 
         </>
