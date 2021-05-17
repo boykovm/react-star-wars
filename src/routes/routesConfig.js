@@ -1,8 +1,8 @@
-import PeoplePage from "../containers/PeoplePage/PeoplePage";
 import {HomePage} from "../containers/HomePage/HomePage";
+import PeoplePage from "../containers/PeoplePage/PeoplePage";
 import {NotFoundPage} from "../containers/NotFoundPage/NotFoundPage";
 
-export const routesConfig = [
+const routesConfig = [
     {
         path: '/',
         exact: true,
@@ -10,7 +10,7 @@ export const routesConfig = [
     },
     {
         path: '/people',
-        exact: true,
+        exact: false,
         component: PeoplePage
     },
     {
@@ -25,3 +25,5 @@ export const routesConfig = [
         component: NotFoundPage
     },
 ]
+
+export default routesConfig
