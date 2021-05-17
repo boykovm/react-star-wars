@@ -1,9 +1,9 @@
-import styles from './HomePage.modules.scss'
+// import styles from './HomePage.module.scss'
 
 export const HomePage = () => {
     return (
         <>
-            <h1 className="header__text">Home page</h1>
+            <h1>Home page</h1>
         </>
     )
 }

@@ -1,0 +1,15 @@
+@import "../../styles/variables";
+
+.image {
+  width: 250px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.text {
+  margin-top: map-get($root-settings, spacing-large);
+  font-size: map-get($root-settings, font-size-subheader);
+  color: map-get($root-settings, color-white);
+  text-align: center;
+  text-shadow: map-get($text-shadow, text-shadow-start), map-get($text-shadow, text-shadow-blue);
+}

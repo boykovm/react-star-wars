@@ -13,7 +13,8 @@
     padding: 0;
     list-style-type: none;
 
-    li {
+    .list__item {
+
       a {
         display: block;
         margin: 0 10px;
@@ -23,9 +24,11 @@
         font-family: map-get($root-settings, font-family-main);
         text-decoration: none;
         font-weight: map-get($root-settings, fontbold);
-        text-shadow: map-get($text-shadow, text-shadow-yellow), map-get($text-shadow, text-shadow-blue);
+        text-shadow: map-get($text-shadow, text-shadow-start), map-get($text-shadow, text-shadow-yellow);
+        text-align: center;
         trasition: map-get($root-settings, transition);
         border: 2px solid transparent;
+        border-radius: map-get($root-settings, border-radius-small);
       }
     }
 
